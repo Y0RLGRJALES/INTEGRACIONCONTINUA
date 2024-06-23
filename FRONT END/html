@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspira</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener un archivo CSS para los estilos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 15px;
+            text-decoration: none;
+            display: block;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover; /* Asegúrate de tener una imagen */
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Inspira</h1>
+</header>
+
+<nav>
+    <a href="#home">Inicio</a>
+    <a href="#about">Sobre Nosotros</a>
+    <a href="#services">Servicios</a>
+    <a href="#contact">Contacto</a>
+</nav>
+
+<div class="hero">
+    <h1>Bienvenido a Inspira</h1>
+</div>
+
+<div class="container">
+    <div class="content">
+        <div class="card">
+            <img src="image1.jpg" alt="Imagen 1"> <!-- Asegúrate de tener una imagen -->
+            <h2>Servicio 1</h2>
+            <p>Descripción del servicio 1.</p>
+        </div>
+        <div class="card">
+            <img src="image2.jpg" alt="Imagen 2"> <!-- Asegúrate de tener una imagen -->
+            <h2>Servicio 2</h2>
+            <p>Descripción del servicio 2.</p>
+        </div>
+        <div class="card">
+            <img src="image3.jpg" alt="Imagen 3"> <!-- Asegúrate de tener una imagen -->
+            <h2>Servicio 3</h2>
+            <p>Descripción del servicio 3.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Inspira. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
