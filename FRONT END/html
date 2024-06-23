@@ -112,17 +112,17 @@
 <div class="container">
     <div class="content">
         <div class="card">
-            <img src="image1.jpg" alt="Imagen 1"> <!-- Asegúrate de tener una imagen -->
+            <img src="image1.jpg" alt="Imagen 1">
             <h2>Servicio 1</h2>
             <p>Descripción del servicio 1.</p>
         </div>
         <div class="card">
-            <img src="image2.jpg" alt="Imagen 2"> <!-- Asegúrate de tener una imagen -->
+            <img src="image2.jpg" alt="Imagen 2">
             <h2>Servicio 2</h2>
             <p>Descripción del servicio 2.</p>
         </div>
         <div class="card">
-            <img src="image3.jpg" alt="Imagen 3"> <!-- Asegúrate de tener una imagen -->
+            <img src="image3.jpg" alt="Imagen 3">
             <h2>Servicio 3</h2>
             <p>Descripción del servicio 3.</p>
         </div>
