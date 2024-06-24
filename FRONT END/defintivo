@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSPIRA</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de tener un archivo CSS para los estilos -->
+    
+</head>
+<body>
+
+<header>
+    <h1>INSPIRA</h1>
+</header>
+
+<nav>
+    <a href="#home">Inicio</a>
+    <a href="#about">Sobre Nosotros</a>
+    <a href="#services">Servicios</a>
+    <a href="#contact">Contacto</a>
+</nav>
+
+<div class="hero">
+    <h1>Bienvenidos a Inspira</h1>
+    <p>Inspirate con nosotros</p>
+    <p>Escoje las opciones que tenemos para tí</p>
+    <div class="button-container">
+        <button onclick="mostrarFrase('celebre')">Frases Célebres</button>
+        <button onclick="mostrarFrase('inspiradora')">Frases Inspiradoras</button>
+    </div>
+</div>
+
+<div class="quote-section">
+    <p id="quote" class="quote"></p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Inspira. Todos los derechos reservados. Realizado por:</p>    
+    <p>Yorlandi Grajales, Andres Medina, Carlos Recalde, Richard Florez.</p>
+</footer>
+
+<script>
+    const frasesCelebres = [
+        "La vida es lo que pasa mientras estás ocupado haciendo otros planes. - John Lennon",
+        "Lo que no te mata te hace más fuerte. - Friedrich Nietzsche",
+        "El conocimiento es poder. - Francis Bacon",
+        "El tiempo es dinero. - Benjamin Franklin",
+        "La imaginación lo es todo. Es la vista previa de las atracciones de la vida que vendrán. - Albert Einstein"
+    ];
+
+    const frasesInspiradoras = [
+        "La única manera de hacer un gran trabajo es amar lo que haces. - Steve Jobs",
+        "El éxito es la suma de pequeños esfuerzos repetidos día tras día. - Robert Collier",
+        "No te rindas, cada fracaso es una oportunidad para empezar de nuevo con más experiencia. - Henry Ford",
+        "La mejor manera de predecir el futuro es crearlo. - Peter Drucker",
+        "El único límite a nuestros logros de mañana está en nuestras dudas de hoy. - Franklin D. Roosevelt"
+    ];
+
+    function mostrarFrase(tipo) {
+        let frase;
+        if (tipo === 'celebre') {
+            const randomIndex = Math.floor(Math.random() * frasesCelebres.length);
+            frase = frasesCelebres[randomIndex];
+        } else {
+            const randomIndex = Math.floor(Math.random() * frasesInspiradoras.length);
+            frase = frasesInspiradoras[randomIndex];
+        }
+        document.getElementById('quote').innerText = frase;
+    }
+</script>
+
+</body>
+</html>
