@@ -1,0 +1,28 @@
+pipeline {
+    agent any
+    triggers {
+        githubPush()
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/Y0RLGRJALES/INTEGRACIONCONTINUA.git', branch: 'main'
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'docker-compose build app'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'docker-compose run app npm test'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'docker-compose up -d'
+            }
+        }
+    }
+}
